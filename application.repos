@@ -15,6 +15,10 @@ repositories:
     type: git 
     url: https://github.com/aerostack/quadrotor_motion_with_pid_control
     version: master
+  behaviors/basic_quadrotor_behaviors:
+    type: git 
+    url: https://github.com/aerostack/basic_quadrotor_behaviors
+    version: master
     
 #----------------------------------------------------------------------------
 # Mission control
