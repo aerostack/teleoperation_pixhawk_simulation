@@ -7,7 +7,7 @@ UAV_MASS=1.5
 
 MAV_NAME=iris
 
-export AEROSTACK_PROJECT=${AEROSTACK_STACK}/projects_test/teleoperation_pixhawk_simulation
+export AEROSTACK_PROJECT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 . ${AEROSTACK_STACK}/config/mission/setup.sh
 
 # if [ -z $NETWORK_ROSCORE ] # Check if NETWORK_ROSCORE is NULL
