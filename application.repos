@@ -47,10 +47,10 @@ repositories:
 #----------------------------------------------------------------------------
 # Simulation
 #----------------------------------------------------------------------------
-#  simulation/px4_autopilot:
-#    type: git 
-#    url: https://github.com/aerostack/px4_autopilot
-#    version: master
+  simulation/px4_autopilot:
+    type: git 
+    url: https://github.com/aerostack/px4_autopilot
+    version: master
     
 #----------------------------------------------------------------------------
 # Hardware interface
