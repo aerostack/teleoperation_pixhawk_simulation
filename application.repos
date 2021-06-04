@@ -19,6 +19,10 @@ repositories:
     type: git 
     url: https://github.com/aerostack/basic_quadrotor_behaviors
     version: master
+  behaviors/quadrotor_motion_with_df_control:
+    type: git 
+    url: https://github.com/aerostack/quadrotor_motion_with_df_control
+    version: master
     
 #----------------------------------------------------------------------------
 # Mission control
