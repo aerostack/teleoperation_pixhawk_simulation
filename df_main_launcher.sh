@@ -59,7 +59,7 @@ tmux send-keys "roslaunch python_based_mission_interpreter_process python_based_
   drone_id_namespace:=drone$NUMID_DRONE \
   drone_id_int:=$NUMID_DRONE \
   my_stack_directory:=${AEROSTACK_PROJECT} \
-  mission_configuration_folder:=${AEROSTACK_PROJECT}/configs/mission" C-m
+  mission_configuration_folder:=${AEROSTACK_PROJECT}/configs/mission_df" C-m
 
 tmux new-window -t $SESSION:8 -n 'Behavior Coordinator'
 tmux send-keys "roslaunch behavior_coordinator behavior_coordinator.launch --wait \
