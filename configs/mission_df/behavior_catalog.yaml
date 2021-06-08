@@ -78,6 +78,12 @@ behaviors:
   requires:
   - task: QUADROTOR_DF_MOTION_CONTROL
 
+- behavior: LAND_WITH_DF
+  package: quadrotor_motion_with_df_control
+  task: LAND_WITH_DF
+  requires:
+  - task: QUADROTOR_DF_MOTION_CONTROL
+
 - behavior: FOLLOW_PATH_WITH_DF
   package: quadrotor_motion_with_df_control
   task: FOLLOW_PATH_WITH_DF
@@ -193,6 +199,8 @@ tasks:
   execution_goal: keep_running
 
 - task: TAKE_OFF_WITH_DF
+
+- task: LAND_WITH_DF
 
 - task: FOLLOW_PATH_WITH_DF
 

@@ -3,7 +3,7 @@
 NUMID_DRONE=1
 NETWORK_ROSCORE=$1
 SESSION=$USER
-UAV_MASS=0.7
+UAV_MASS=1.5
 
 MAV_NAME=iris
 
@@ -64,7 +64,7 @@ tmux send-keys "roslaunch python_based_mission_interpreter_process python_based_
 tmux new-window -t $SESSION:8 -n 'Behavior Coordinator'
 tmux send-keys "roslaunch behavior_coordinator behavior_coordinator.launch --wait \
   robot_namespace:=drone$NUMID_DRONE \
-  catalog_path:=${AEROSTACK_PROJECT}/configs/mission/behavior_catalog.yaml" C-m
+  catalog_path:=${AEROSTACK_PROJECT}/configs/mission_df/behavior_catalog.yaml" C-m
 
 tmux attach-session -t $SESSION:1
 

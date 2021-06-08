@@ -15,10 +15,10 @@ def mission():
   mxc.executeTask('TAKE_OFF_WITH_DF')
 
   #print("FOLLOW_PATH...")
-  mxc.startTask('FOLLOW_PATH_WITH_DF')
+  #mxc.startTask('FOLLOW_PATH_WITH_DF')
   # time.sleep(1)
   print("SEND PATH...")
-  mxc.executeTask('SEND_PATH', path = [ [1, 1, 1],[1, -1, 1],[-1, -1, 1],[-1, 1, 1],[0 ,0 ,1.5]])
+  mxc.executeTask('LAND_WITH_DF')
 
 
   print('Finish mission...')
