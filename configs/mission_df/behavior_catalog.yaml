@@ -218,3 +218,7 @@ exclusivity_constraints:
 - mutually_exclusive:
   - QUADROTOR_DF_MOTION_CONTROL
   - PID_MOTION_CONTROL
+- mutually_exclusive:
+  - TAKE_OFF_WITH_DF
+  - LAND_WITH_DF
+  - FOLLOW_PATH_WITH_DF
