@@ -47,8 +47,8 @@ tmux send-keys "roslaunch quadrotor_motion_with_pid_control quadrotor_motion_wit
      uav_mass:=$UAV_MASS" C-m
 
 tmux new-window -t $SESSION:5 -n 'GroundTruth Gazebo'
-tmux send-keys "rosrun topic_tools relay /drone${NUMID_DRONE}/mavros/local_position/pose /drone${NUMID_DRONE}/self_localization/pose & \
-rosrun topic_tools relay drone${NUMID_DRONE}/mavros/local_position/velocity_local /drone${NUMID_DRONE}/self_localization/speed" C-m
+tmux send-keys "roslaunch px4_simulator_aerostack_plugin px4_simulator_aerostack_plugin.launch \
+    namespace:=drone$NUMID_DRONE " C-m
 
 tmux new-window -t $SESSION:6 -n 'Throttle_Controller'
 tmux send-keys "sleep 2; roslaunch thrust2throttle_controller thrust2throttle_controller.launch --wait \
