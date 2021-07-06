@@ -109,6 +109,8 @@
           </surface>
         </collision>
         <visual name='visual'>
+          <pose frame=''>0 0 0 0 1.57 0</pose> 
+        <!-- AQUI ESTOY TOQUETEANDO  -->
           <geometry>
             <box>
               <size>0.2 0.01 0.2</size>
@@ -144,7 +146,7 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
         <visual name='visual'>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0 0 0 0</pose> 
           <geometry>
             <mesh>
               <uri>model://aruco_gate_1/meshes/base.stl</uri>
@@ -451,6 +453,7 @@
           </surface>
         </collision>
         <visual name='visual'>
+          <pose frame=''>0 0 0 0 1.57 0</pose> 
           <geometry>
             <box>
               <size>0.2 0.01 0.2</size>
